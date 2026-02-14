@@ -16,14 +16,15 @@
 body {
   line-height: 1.6;
   color: #333;
-  margin-top: 70px;
+  margin-top: 200px;
 }
 
 nav {
   background: white;
-  padding: 15px 30px;
+  padding: 20px 30px;
   display: flex;
-  justify-content: flex-start;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   position: fixed;
@@ -31,14 +32,23 @@ nav {
   width: 100%;
   z-index: 100;
   box-sizing: border-box;
-  gap: 40px;
+  gap: 20px;
+}
+
+.nav-logo {
+  width: 160px;
+  height: auto;
+  object-fit: contain;
+  mix-blend-mode: multiply;
+  filter: brightness(1.1) contrast(1.2);
 }
 
 nav ul {
   display: flex;
   list-style: none;
-  gap: 30px;
+  gap: 60px;
   margin: 0;
+  justify-content: center;
 }
 
 nav a {
@@ -133,6 +143,7 @@ footer {
 <body>
 
 <nav>
+  <img src="./images/Sthirya logo.jpg" alt="Sthirya Logo" class="nav-logo">
   <ul>
     <li><a href="#home">Home</a></li>
     <li><a href="#about">About</a></li>
